@@ -1,14 +1,15 @@
-#!/bin/bash
+#!/bin/sh
 
-echo "This program is to find sum of N numbers"
-echo "Enter the value for N:"
+echo "Enter the number of numbers: "
 read n
 i=1
 sum=0
 while [ $i -le $n ]
 do
-	sum=$(($sum+$i))
-	i=$(($i+1))
+echo "Enter the number $i:"
+read num
+sum=$(($sum+$num))
+i=$((i+1))
 done
-echo $sum
+echo "Final Sum = $sum"
 
